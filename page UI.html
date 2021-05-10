@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ </head>
+ <body>
+ 	<div class="main">
+
+ 		<div class="video">
+ 			<video loop>
+ 				<source src="video/beach.mp4" type="video/mp4">
+ 			</video>
+ 		</div>
+
+
+ 		<div class="time">
+ 		<button data-time="120">2 minutes</button>
+ 		<button data-time="300">5 minutes</button>
+ 		<button data-time="600">10 minutes</button>
+ 		</div>
+
+ 		<div class="player">
+ 			<audio class="song">
+ 				<source src="sounds/beach.mp3" >
+ 			</audio>
+ 			<img src="svg/play.svg" class="play"></img>
+ 			<svg class="outline "width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20"/>
+			</svg>
+
+			<svg class="moving" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
+			</svg>
+
+ 		
+ 			<h3 class="time-display">0:00</h3>	
+ 		</div>
+
+ 
+ 		<div class="sound">
+			<button data-sound="sounds/rain.mp3" data-video="video/rain.mp4">
+				<img src="svg/rain.svg">
+			</button>
+			<button data-sound="sounds/beach.mp3" data-video="video/beach.mp4">
+				<img src="svg/beach.svg">
+			</button> 
+			<button data-sound="sounds/Birds-chirping-sound-effect.mp3" data-video="video/birds.mp4">
+				<img src="svg/bird.svg">
+			</button>		 		
+ 		</div>
+
+ 	</div>
+
+ 	<script src="script.js"></script>
+ </body>
+</html>
